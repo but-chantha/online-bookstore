@@ -1,5 +1,5 @@
 body{
-    min-width: 830px;
+    background-image: url("components/resources/image/download.png");
 }
 .header {
     font-size: 22px;
@@ -16,7 +16,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     position: sticky;
-    background-color: #7b8c82;
+    background-color: #a1d9e0;
 
 }
 
@@ -27,9 +27,8 @@ body{
 }
 
 .logo{
-    width: 100px;
+    width: 150px;
     padding-top: 15px;
-    background-color: blue;
 
 
 }
@@ -38,7 +37,7 @@ body{
     text-align: center;
     width: 100px;
     padding-top: 15px;
-    background-color: #424040;
+    background-color: #90c6cc;
 }
 
 
@@ -51,7 +50,8 @@ body{
     padding-top: 15px;
     text-align: center;
     width: 110px;
-    background-color: #424040;
+    background-color: #90c6cc;
+    margin: 0 5px;
 
 }
 
@@ -59,36 +59,38 @@ body{
     padding-top: 15px;
     width: 125px;
     text-align: center;
-    background-color: blue;
+    background-color: #90c6cc;
+    margin: 0 5px;
 
 }
 
 .link{
     padding-top: 15px;
-    background-color: #424040;
+    background-color: #90c6cc;
+
     width: 75px;
     text-align: center;
+    margin: 0 5px;
 }
 
 .login-section{
     padding-top: 15px;
     width: 75px;
-    background-color: blue;
+    background-color: #90c6cc;
     text-align: center;
 
 }
 
 .btnLogIn-popup{
     text-align: center;
-    margin: 0;
+    margin: 0 5px;
 }
 
 .profile{
     margin-right: 30px;
     overflow: hidden;
     margin-top: 2px;
-
-
+    margin-left: 5px;
 }
 
 .image{
@@ -100,7 +102,7 @@ body{
 
 
 .bott-nav{
-    background-color: #989393;
+    background: transparent;
     height: auto;
     display: grid;
     grid-template-columns: 500px 1fr;
@@ -128,11 +130,28 @@ body{
 }
 
 .search-bar{
-    background-color: #d2fdeb;
+
     text-align: center;
-    padding-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 10px;
 
 }
+
+.search-bar input{
+    height: 45px;
+    width: 300px;
+    padding-left: 20px;
+    border-radius: 15px;
+    font-size: 19px;
+
+}
+
+.search-bar input:focus{
+    color: #000000;
+    background-color: #d0d5d1;
+
+}
+
 
 .display-product{
     height: 500px;
@@ -177,9 +196,9 @@ body{
 .category-name p {
     color: white;
     background-color: #424040;
-    height: 25px;
+    height: 23px;
     border-radius: 6px;
-    margin: 0;
+    margin-top: 3px;
     padding: 8px  10px;
     font-size: 20px;
     border: 1px solid grey;
@@ -191,14 +210,13 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr;
     row-gap: 50px;
-    background-color: #bbc7c0;
     height: 300px;
     padding: 20px;
     overflow: hidden;
 }
 
 .item-form{
-    background-color: #135735;
+    background-color: #a9bbb2;
     height: 300px;
     width: 230px;
     margin: 0 10px;
@@ -219,6 +237,7 @@ body{
     font-size: 30px;
     padding-top: 16px;
     margin-bottom: 20px;
+    padding-left: 30px;
 }
 
 .book-form{
@@ -278,17 +297,42 @@ body{
 
 .tail-nav{
     background-color: black;
-    height: 500px;
+    height: 200px;
     margin-right: -8px;
     margin-left: -9px;
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 
 }
 
+.aboutUs{
+    font-size: 30px;
+    margin-bottom: 20px;
 
+}
 
+.contactUs{
+    margin: 0;
+    font-size: 20px;
 
+}
+.contactUs p{
+    font-size: 30px;
+    margin: 0;
+}
 
+.contactUs-number p{
+    margin: 10px 10px 10px 20px;
+    font-size: 20px;
 
+}
+
+.terms-policy{
+    font-size: 30px;
+}
 
 
 
