@@ -1,0 +1,176 @@
+
+.header {
+    font-size: 22px;
+    margin-top: -10px;
+    margin-left: -5px;
+    margin-right: -5px;
+    padding: 0;
+}
+
+.top-nav{
+    height: 55px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    background-color: #7b8c82;
+
+}
+
+.left-nav{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logo{
+    width: 100px;
+    padding-top: 15px;
+    background-color: blue;
+
+
+}
+
+.menu{
+    text-align: center;
+    width: 100px;
+    padding-top: 15px;
+    background-color: #424040;
+}
+
+
+.right-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.promo{
+    padding-top: 15px;
+    text-align: center;
+    width: 110px;
+    background-color: #424040;
+
+}
+
+.latest-product{
+    padding-top: 15px;
+    width: 125px;
+    text-align: center;
+    background-color: blue;
+
+}
+
+.link{
+    padding-top: 15px;
+    background-color: #424040;
+    width: 75px;
+    text-align: center;
+}
+
+.login-section{
+    padding-top: 15px;
+    width: 75px;
+    background-color: blue;
+    text-align: center;
+
+}
+
+.btnLogIn-popup{
+    text-align: center;
+    margin: 0;
+}
+
+.profile{
+    margin-right: 30px;
+    overflow: hidden;
+    margin-top: 2px;
+
+
+}
+
+.image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.bott-nav{
+    background-color: #989393;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.search-bar{
+    background-color: #d2fdeb;
+    text-align: center;
+    width: 400px;
+
+}
+
+.display{
+    text-align: center;
+
+}
+
+.main{
+
+
+}
+
+.category-item{
+    background-color: #7b8c82;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.category-name{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+}
+
+.category-name h3{
+    width: 100px;
+    background-color: white;
+    height: 55px;
+    margin: 0;
+    padding-top: 13px;
+
+
+}
+
+.category-name p {
+    padding: 10px;
+    font-size: 20px;
+    margin: 0 20px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
