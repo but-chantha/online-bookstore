@@ -2,7 +2,7 @@
 .header {
     font-size: 22px;
     margin-top: -10px;
-    margin-left: -5px;
+    margin-left: -8px;
     margin-right: -5px;
     padding: 0;
 }
@@ -98,7 +98,7 @@
 
 .bott-nav{
     background-color: #989393;
-    height: 400px;
+    height: 500px;
     display: flex;
     flex-direction: row;
 
@@ -108,7 +108,7 @@
 .search-bar{
     background-color: #d2fdeb;
     text-align: center;
-    width: 400px;
+    width: 500px;
 
 }
 
@@ -117,43 +117,92 @@
 
 }
 
-.main{
 
+
+
+
+
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-left: -8px;
+    margin-right: -5px;
 
 }
 
-.category-item{
+.category-form{
     background-color: #7b8c82;
     display: flex;
     flex-direction: column;
+
 }
 
 
 .category-name{
-    height: 55px;
+    height: 50px;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
+
 }
 
 .category-name h3{
-    width: 100px;
-    background-color: white;
-    height: 55px;
+    text-align: center;
+    width: 120px;
+    background-color: #b99c9c;
+    height: 40px;
     margin: 0;
     padding-top: 13px;
-
 
 }
 
 .category-name p {
-    padding: 10px;
+    padding: 13px;
     font-size: 20px;
     margin: 0 20px ;
+    display: block;
 }
 
 
+.category-item{
+    display: flex;
+    flex-direction: row;
+    background-color: #bbc7c0;
+    height: 300px;
+    padding: 20px;
+}
+
+.item-form{
+    background-color: #135735;
+    height: 280px;
+    width: 200px;
+    margin: 0 10px;
+
+}
 
 
+.form-book{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-book p {
+    height: 60px;
+    background-color: #989393;
+    font-size: 30px;
+    padding-top: 15px;
+    margin: 0;
+}
+.book-form{
+    display: grid;
+    grid-template-rows:  1fr 1fr 1fr 1fr;
+    height: 50;
+
+
+}
 
 
 
