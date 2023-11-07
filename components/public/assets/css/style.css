@@ -102,7 +102,11 @@ body{
 
 
 .bott-nav{
-    background: transparent;
+    background: linear-gradient(
+            to right,
+                    rgb(0 0 0 /0.5),
+                    rgb(0 0 0 / 0)
+                    ),url(components/resources/image/02.jpg);
     height: auto;
     display: grid;
     grid-template-columns: 500px 1fr;
@@ -179,15 +183,19 @@ body{
 .category-name{
     height: auto;
     display: grid;
-    grid-template-columns: 160px auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: 160px auto auto auto auto auto ;
     column-gap: 20px;
+    background-color: #c2dada;
+    padding-top: 10px;
+    align-content: flex-start;
 
 
 }
 
 .category-name h3{
     font-size: 23px;
-    margin: 0;
+    width: 160px;
+    margin: 0 0 0 20px;
     padding-top : 7px;
     text-align: right;
 
@@ -197,11 +205,14 @@ body{
     color: white;
     background-color: #424040;
     height: 23px;
+
     border-radius: 6px;
     margin-top: 3px;
+    margin-bottom: 15px;
     padding: 8px  10px;
     font-size: 20px;
     border: 1px solid grey;
+    align-self: inherit;
 
 }
 
@@ -210,6 +221,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr;
     row-gap: 50px;
+    column-gap: 20px;
     height: 300px;
     padding: 20px;
     overflow: hidden;
@@ -219,7 +231,7 @@ body{
     background-color: #a9bbb2;
     height: 300px;
     width: 230px;
-    margin: 0 10px;
+
 
 }
 
@@ -254,7 +266,7 @@ body{
     .book-form{
         grid-template-columns: 1fr 1fr;
     }
-    
+
 }
 @media (min-width: 901px ) and (max-width: 1240px){
     .book-form{
