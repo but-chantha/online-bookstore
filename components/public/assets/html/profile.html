@@ -3,30 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>profile-user</title>
+
     <link rel="stylesheet" href="../css/profile.css">
+
     <script src="https://kit.fontawesome.com/de06db78d4.js " crossorigin="anonymous"></script>
 
 </head>
 <body>
 
+<div class="arrow-left">
+    <a href="index.html">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+</div>
+
+
 <main>
 
-    <section>
-        <div>profile</div>
-        <div>
-            <div>name</div>
-            <div>bio</div>
+    <section class="user-form">
+        <div class="user-profile">
+            <img src="../../../resources/image/07.jpg" />
+        </div>
+
+        <div class="edit">
+            <i class="fa-regular fa-pen-to-square"></i>
+        </div>
+
+        <div class="user-info">
+            <div class="username">Name : </div>
+            <div class="user-bio">
+                <input type="text" placeholder="Bio....">
+
+            </div>
+            <div class="message">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
 
         </div>
+
     </section>
 
-    <section>
-        <div>
-            <h3>user buy history</h3>
-            <button>hide</button>
+    <section class="user-history">
+        <div class="history-form">
+            <h3>Purchased History</h3>
         </div>
 
-        <div>history section</div>
+        <div class="history-list">history section</div>
 
     </section>
 </main>

@@ -93,6 +93,18 @@ body{
     margin-left: 5px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 .image{
     width: 50px;
     height: 50px;
@@ -104,9 +116,10 @@ body{
 .bott-nav{
     background: linear-gradient(
             to right,
-                    rgb(0 0 0 /0.5),
+                    rgb(0 0 0 /.3),
                     rgb(0 0 0 / 0)
-                    ),url(components/resources/image/02.jpg);
+                    ), #f5f4f4;
+
     height: auto;
     display: grid;
     grid-template-columns: 500px 1fr;
@@ -181,13 +194,13 @@ body{
 
 
 .category-name{
-    height: auto;
-    display: grid;
-    grid-template-columns: 160px auto auto auto auto auto ;
-    column-gap: 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: start;
     background-color: #c2dada;
     padding-top: 10px;
-    align-content: flex-start;
+    overflow: hidden;
+    height: 60px;
 
 
 }
@@ -195,20 +208,18 @@ body{
 .category-name h3{
     font-size: 23px;
     width: 160px;
-    margin: 0 0 0 20px;
+    margin: 0 20px 0 20px;
     padding-top : 7px;
     text-align: right;
-
+    text-decoration: underline;
 }
 
 .category-name p {
     color: white;
     background-color: #424040;
     height: 23px;
-
     border-radius: 6px;
-    margin-top: 3px;
-    margin-bottom: 15px;
+    margin: 3px 5px 15px;
     padding: 8px  10px;
     font-size: 20px;
     border: 1px solid grey;
@@ -244,12 +255,29 @@ body{
 }
 
 .form-book p {
+    text-decoration: underline;
     height: 60px;
+    color: black ;
     background-color: #989393;
     font-size: 30px;
     padding-top: 16px;
     margin-bottom: 20px;
     padding-left: 30px;
+    position: relative;
+    font-weight: bolder;
+}
+.form-book button{
+    position: fixed;
+    z-index: 100;
+    right: 100px;
+    bottom: 100px;
+    font-size: 30px;
+    padding: 14px 20px;
+    border-radius: 50%;
+    color: rgb(0 0 0 / 0.5);
+    background: rgb(0 0 0 /0.2);
+    border: none;
+
 }
 
 .book-form{
@@ -308,42 +336,62 @@ body{
 
 
 .tail-nav{
-    background-color: black;
-    height: 200px;
+    background-image: url("/components/resources/image/03.jpg");
+
+    height: 500px;
     margin-right: -8px;
     margin-left: -9px;
     padding: 50px;
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
 }
 
-.aboutUs{
+.aboutUs a{
+    text-decoration: none;
     font-size: 30px;
-    margin-bottom: 20px;
+    color: white;
 
+}
+.aboutUs a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #a9ceac;
 }
 
 .contactUs{
-    margin: 0;
     font-size: 20px;
 
 }
+
 .contactUs p{
+    text-decoration: underline;
+    margin-top: 0;
+    margin-bottom: 20px;
     font-size: 30px;
-    margin: 0;
+
 }
 
 .contactUs-number p{
+    text-decoration: none;
     margin: 10px 10px 10px 20px;
     font-size: 20px;
 
 }
 
-.terms-policy{
+.terms-policy a{
+    text-decoration: none;
     font-size: 30px;
+    color: white;
+}
+
+
+.terms-policy a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #a9ceac;
 }
 
 
