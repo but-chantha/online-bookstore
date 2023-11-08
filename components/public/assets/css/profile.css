@@ -1,5 +1,6 @@
 body{
     background: #cee1dc;
+    margin-bottom: 300px;
 }
 
 .arrow-left{
@@ -19,13 +20,16 @@ body{
 
 main{
     border-radius: 15px;
-    background-color: rgb(0,0,0,0.3);
-    box-shadow:0 0 10px #000;
+    background-color: rgb(0,0,0,0.1);
+    box-shadow:0 0 10px #3b3b3b;
+    border: 3px solid #c7c7c7;
     padding-top: 20px;
-    padding-bottom: 200px;
+    padding-bottom: 20px;
     margin-top: 30px;
     margin-left: 20px;
-    max-width: 1300px;
+    margin-right: 20px;
+    max-width: 1200px;
+
 }
 
 @media (min-width: 1200px) {
@@ -39,26 +43,32 @@ main{
 
 .user-form{
     display: grid;
-    grid-template-columns: 340px 1fr;
-    column-gap: 40px;
-    border-bottom: 2px solid grey;
+    grid-template-columns: 300px 1fr;
+    column-gap: 60px;
 
 }
 
+
 .user-profile{
-    padding: 20px;
-    overflow: hidden;
-    width: 300px;
-    height: 350px;
-    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.20) 0 5px 15px;
+    border: 1px solid grey;
     border-radius: 13px;
+    overflow: hidden;
+    width: 260px;
+    height: 280px;
+    position: relative;
+    padding: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+
 
 }
 
 .user-profile img{
-    height: 303px;
-    width: 373px;
     border-radius: 13px;
+    opacity: 2;
+    width: 100%;
+    height: 100%;
 
 
 }
@@ -66,8 +76,11 @@ main{
 .edit{
     position: absolute;
     padding: 5px;
+    top: 400px;
+    left: 320px;
     border-radius: 5px;
     background: rgb(0 0 0 / 0.5);
+    opacity: 0.5;
     .fa-pen-to-square{
         font-size: 30px;
         color: white;
@@ -76,6 +89,7 @@ main{
 
 
 .user-info{
+    box-shadow: rgba(0, 0, 0, 0.20) 0 5px 15px;
     border: 1px solid grey;
     border-radius: 13px;
     padding: 20px;
@@ -83,6 +97,7 @@ main{
     flex-direction: column;
     max-width:900px ;
     margin-bottom: 30px;
+    margin-right: 20px;
 
 }
 
@@ -131,24 +146,63 @@ main{
 
 }
 
-.history-form h3{
+.history-line h3{
     padding: 15px 30px;
     font-size: 30px;
     background: rgb(0 0 0 / 0.5);
     color: white;
+
 }
 
 .history-list{
-    margin: 20px 30px;
-    background: #eae6e6;
-    border-bottom: 1px solid darkgrey;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 30px;
+    margin: 0 50px;
 
-    height: 50px;
+
+}
+
+.history-book-title h3{
+    background: linear-gradient(
+            to right,
+            rgb(0 0 0 /.3),
+            rgb(0 0 0 / 0)
+    ), #deffff;
+
+    font-size: 25px;
+    margin: 0;
+    padding: 5px 7px;
+
+
+}
+
+.book-title {
+    font-size: 20px;
+    border-bottom: 1px solid #757272;
 
 }
 
 
+.history-date-book h3{
+    font-size: 25px;
+    margin: 0;
+    padding: 5px 7px;
+    background: linear-gradient(
+            to right,
+            rgb(0 0 0 /.3),
+            rgb(0 0 0 / 0)
+    ), #deffff;
 
+
+}
+
+.purchased-date {
+    font-size: 20px;
+    border-bottom: 1px solid #757272;
+
+
+}
 
 
 
