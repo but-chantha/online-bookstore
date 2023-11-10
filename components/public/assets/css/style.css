@@ -159,6 +159,9 @@ body{
         width: 100%;
         text-align: center;
     }
+    .search-bar p{
+        opacity: 0;
+    }
 
     .display-product{
         height: 300px;
@@ -189,6 +192,14 @@ body{
     background-color: #d0d5d1;
     width: 400px;
 }
+
+.search-bar p{
+    color: #706d6d;
+    font-size: 23px;
+    font-weight: bold;;
+}
+
+
 
 
 .display-product{
