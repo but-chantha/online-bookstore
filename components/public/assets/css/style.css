@@ -128,26 +128,12 @@ body{
     margin-left: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.image{
+.profile .user-profile{
     width: 50px;
     height: 50px;
     border-radius: 50%;
 
 }
-
-
 .bot-nav{
     background: linear-gradient(
             to right,
@@ -189,6 +175,7 @@ body{
 
 }
 
+
 .search-bar input{
     height: 45px;
     width: 300px;
@@ -197,11 +184,10 @@ body{
     font-size: 19px;
 
 }
-
 .search-bar input:focus{
     color: #000000;
     background-color: #d0d5d1;
-
+    width: 400px;
 }
 
 
@@ -396,6 +382,7 @@ body{
     height: auto;
     margin: auto;
 
+
 }
 
 @media  (min-width: 700px)and (max-width: 900px ) {
@@ -438,9 +425,11 @@ body{
 .book-preview{
     height: 400px;
     width: 300px;
-    background-color: #cdecde;
+    background-color: #a9bbb2;
     display: grid;
     grid-template-rows: 320px auto;
+    border-radius: 7px;
+    overflow: hidden;
 
 }
 
@@ -452,7 +441,6 @@ body{
 .thumbnail{
     height: 320px;
     width: 100% ;
-    border-radius: 7px;
 }
 
 .book-info-grid{
