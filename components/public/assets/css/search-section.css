@@ -1,8 +1,8 @@
 body{
     background-color: rgb(0 0 0/0.1);
+    margin-bottom: 300px;
     font-family: sans-serif;
 }
-
 
 .header {
     font-size: 22px;
@@ -126,7 +126,7 @@ body{
 .profile{
     margin-right: 30px;
     overflow: hidden;
-    margin-bottom: 0;
+    margin-top: 2px;
     margin-left: 5px;
 }
 
@@ -136,7 +136,6 @@ body{
     border-radius: 50%;
 
 }
-
 .bot-nav{
     border-bottom: 2px solid grey;
     height: auto;
@@ -144,63 +143,62 @@ body{
     grid-template-columns: 500px 1fr;
     row-gap: 20px;
     column-gap: 50px;
-    padding-bottom: 50px;
+   padding-bottom: 50px;
 }
 
+@media (max-width: 1000px) {
+    .bot-nav{
+        grid-template-columns:1fr ;
+    }
 
+    .search-bar{
+        padding-top:-100px;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+    }
+    .search-bar p{
+        opacity: 0;
+    }
 
-.userForm{
-    padding-bottom: 20px;
-    overflow: hidden;
-    display: grid;
+    .display-product{
+        height: 300px;
+        text-align: center;
 
+    }
 }
 
-
-
-.item-form{
-    background-color: #a1d9e0;
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    column-gap: 60px;
-    height: 400px;
-
-
-}
-
-
-.book-image{
-
-    border-radius: 13px;
-    overflow: hidden;
-    width: 270px;
-    height: 300px;
-    padding: 20px;
-    margin-top: 20px;
-    margin-left: 20px;
-
-}
-
-.book-image img{
-    border-radius: 13px;
-    opacity: 2;
-    width: 100%;
-    height: 100%;
-
+.search-bar{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
 
 }
 
 
-.quantity-item{
-    display: flex;
-    flex-direction: column;
+.search-bar input{
+    height: 45px;
+    width: 300px;
+    padding-left: 20px;
+    border-radius: 15px;
+    font-size: 19px;
+
+}
+.search-bar input:focus{
+    color: #000000;
+    background-color: #e3e5e4;
+    width: 400px;
 }
 
-.quantity{
-    display: flex;
-    flex-direction: row;
+.bot-nav p{
+    margin-top: 50px;
+    color: #706d6d;
+    font-size: 23px;
+    font-weight: bold;;
 }
-.quantity p{
-    padding: 0;
-    margin: 0;
-}
+
+
+
+
+
+

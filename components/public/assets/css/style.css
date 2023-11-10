@@ -146,6 +146,19 @@ body{
     grid-template-columns: 500px 1fr;
     row-gap: 20px;
     column-gap: 50px;
+    position: relative;
+}
+.add-to-cart{
+    position: absolute;
+    font-size: 40px;
+    right: 20px;
+    top: 60px;
+    border: none;
+    color: #266e58;
+}
+.add-to-cart i:hover{
+    color: #77c096;
+
 }
 
 @media (max-width: 1000px) {
@@ -215,6 +228,7 @@ body{
 /*body*/
 
 .main{
+
     display: flex;
     flex-direction: column;
     margin-left: -8px;
