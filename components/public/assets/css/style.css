@@ -1,6 +1,8 @@
 body{
     font-family: sans-serif;
-    background-color: rgb(0 0 0/0.1);
+    /*background-color: #c995b3;*/
+    background-color: #c2a18a;
+    background-blend-mode: color;
 }
 .header {
     font-size: 22px;
@@ -13,27 +15,42 @@ body{
 }
 
 .top-nav{
-    height: 55px;
+    height: 60px;
     overflow: hidden;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     position: sticky;
-    background-color: #a1d9e0;
+    background-color: white;
 
 }
 
 .left-nav{
-    width: 150px;margin-left: 20px;
+    width: 150px;
+    margin-left: 20px;
 
 }
 
 .logo{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-    padding-top: 15px;
 
+    & img {
+        height: 50px;
 
+    }
+
+    & p{
+        margin: 0;
+        font-weight: 600;
+        color: #dead97;
+    }
 }
+
 
 .middle-nav{
     display: flex;
@@ -43,15 +60,6 @@ body{
 }
 
 
-.menu{
-    background-color: rgb(0,0,0,0.05);
-    border: 2px solid rgb(0 0 0/.05);
-    box-shadow: 0 0 30px rgba(255,255,255,0.5);
-    backdrop-filter:blur(10px) ;
-    padding: 5px 15px;
-    margin: 0 15px;
-    border-radius: 5px;
-}
 .menu:hover , .link:hover,
 .promo:hover ,.login-section:hover,
 .latest-product:hover{
@@ -63,7 +71,7 @@ body{
 .promo{
     background-color: rgb(0,0,0,0.05);
     border: 2px solid rgb(0 0 0/.05);
-    box-shadow: 0 0 30px rgba(255,255,255,0.5);
+    box-shadow: 0 0 5px #985c54;
     backdrop-filter:blur(10px) ;
     padding: 5px 15px;
     margin: 0 15px;
@@ -73,7 +81,7 @@ body{
 .latest-product{
     background-color: rgb(0,0,0,0.05);
     border: 2px solid rgb(0 0 0/.05);
-    box-shadow: 0 0 30px rgba(255,255,255,0.5);
+    box-shadow: 0 0 5px #985c54;;
     backdrop-filter:blur(10px) ;
     padding: 5px 15px;
     margin: 0 15px;
@@ -94,7 +102,7 @@ body{
     margin: 0 15px;
     background-color: rgb(0,0,0,0.05);
     border: 2px solid rgb(0 0 0/.05);
-    box-shadow: 0 0 30px rgba(255,255,255,0.5);
+    box-shadow: 0 0 5px #985c54;
     backdrop-filter:blur(10px) ;
     border-radius: 5px;
     .fa-square-share-nodes{
@@ -108,7 +116,7 @@ body{
     margin: 0 15px;
     background-color: rgb(0,0,0,0.05);
     border: 2px solid rgb(0 0 0/.05);
-    box-shadow: 0 0 30px rgba(255,255,255,0.5);
+    box-shadow: 0 0 5px #985c54;
     backdrop-filter:blur(10px) ;
     border-radius: 5px;
     text-decoration: none;
@@ -124,7 +132,7 @@ body{
 .profile{
     margin-right: 30px;
     overflow: hidden;
-    margin-top: 2px;
+    margin-top: 5px;
     margin-left: 5px;
 }
 
@@ -137,10 +145,10 @@ body{
 .bot-nav{
     background: linear-gradient(
             to right,
-                    rgb(0 0 0 /.3),
-                    rgb(0 0 0 / 0)
-                    ), #f5f4f4;
-
+            rgb(0 0 0 /.10),
+            rgb(0 0 0 / 0)
+    ), url("/components/resources/image/10.webp") no-repeat right;
+    background-size: cover;
     height: auto;
     display: grid;
     grid-template-columns: 500px 1fr;
@@ -148,16 +156,18 @@ body{
     column-gap: 50px;
     position: relative;
 }
+
 .add-to-cart{
-    position: absolute;
+    position: fixed;
     font-size: 40px;
     right: 20px;
     top: 60px;
     border: none;
-    color: #266e58;
+    color: #37c9d2;
+    background: none;
 }
 .add-to-cart i:hover{
-    color: #77c096;
+    color: #d6d9d6;
 
 }
 
@@ -207,12 +217,10 @@ body{
 }
 
 .search-bar p{
-    color: #706d6d;
+    color: #e7e7e7;
     font-size: 23px;
     font-weight: bold;;
 }
-
-
 
 
 .display-product{
@@ -239,7 +247,7 @@ body{
 .category-form{
     display: grid;
     grid-template-rows: 60px 1fr;
-    height: 420px;
+
 
 }
 
@@ -248,30 +256,29 @@ body{
     display: flex;
     flex-direction: row;
     align-content: start;
-    background-color: #a1d9e0;
+    background-color: #f3d8cf;
     padding-top: 10px;
     overflow: hidden;
     height: 60px;
 }
 
 .category-name h3{
-    font-size: 23px;
-    width: 160px;
+    font-size: 25px;
+    width: 200px;
     margin: 0 20px 0 20px;
-    padding-top : 7px;
+    padding-top : 15px;
     text-align: right;
     text-decoration: underline;
 }
 
 .category-name p {
     color: white;
-    background-color: #424040;
+    background-color: #427ead;
     height: 23px;
     border-radius: 6px;
     margin: 3px 5px 15px;
     padding: 8px  10px;
     font-size: 20px;
-    border: 1px solid grey;
 
 
 }
@@ -286,39 +293,41 @@ body{
     margin-left: 30px;
     overflow: hidden;
 
+
 }
 
 .item-preview{
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: 270px 1fr;
     border-radius: 13px;
     overflow: hidden;
-    height: 350px;
     width: 230px;
-    display: grid;
-    grid-template-rows: 270px auto;
+    height: auto;
 }
 
 
 .item-thumbnail-row{
-    margin-top: 20px;
     height: 270px;
 
 }
 .item-thumbnail{
     height: 270px;
     width: 100% ;
-    border-radius: 7px;
+
+
 }
 
 .item-info-grid{
-    background-color: #a9bbb2;
-    height: 100%;
-    margin-top: 10px;
+    background-color: #e5c1cd;
+    height: auto;
+
 
 }
 
 .item-title{
     font-weight: 00;
-    font-size: 20px;
+    font-size: 17px;
     margin: 5px 15px;
 
 }
@@ -326,44 +335,10 @@ body{
 .item-price{
     text-align: center;
     font-size: 20px;
-    margin: 0 20px;
     font-weight: bold;
+    margin: 0 20px 20px;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .form-book{
@@ -377,7 +352,7 @@ body{
     text-decoration: underline;
     height: 60px;
     color: black ;
-    background-color: #a1d9e0;
+    background-color: #f3d8cf;
     font-size: 30px;
     padding-top: 16px;
     margin-bottom: 20px;
@@ -448,28 +423,31 @@ body{
 }
 
 .book-preview{
-    height: 400px;
+
     width: 300px;
-    background-color: #a9bbb2;
+    background-color: #e5c1cd;
     display: grid;
-    grid-template-rows: 320px auto;
+    grid-template-rows: 320px 1fr;
     border-radius: 7px;
     overflow: hidden;
 
 }
 
 .thumbnail-row{
-   margin-bottom: 20px;
+    margin-bottom: 20px;
     height: 300px;
 
 }
 .thumbnail{
     height: 320px;
-    width: 100% ;
+    width: 100%;
+    object-fit: cover;
 }
 
 .book-info-grid{
-    height: 100%;
+    margin-bottom: 10px;
+    height: auto;
+
 
 }
 
@@ -486,6 +464,16 @@ body{
     margin: 5px 20px;
     font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 .tail-nav{

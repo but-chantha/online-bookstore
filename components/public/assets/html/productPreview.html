@@ -5,6 +5,7 @@
     <title>Preview Product</title>
 
     <link rel="stylesheet" href="../css/productPreview.css">
+    <link rel="icon" type="text/x-icon" href="/components/resources/image/favicon.ico">
 
     <script src="https://kit.fontawesome.com/de06db78d4.js " crossorigin="anonymous"></script>
 
@@ -16,13 +17,17 @@
 <header class="header">
 
     <div class="top-nav">
+
         <section class="left-nav">
-            <div class="logo">logo</div>
+            <div class="logo">
+                <img src="../../../resources/image/09.jpg" />
+                <p>MoonStore</p>
+            </div>
         </section>
 
 
         <section class="middle-nav">
-            <div class="menu">menu</div>
+<!--            <div class="menu">menu</div>-->
             <div class="promo">promotion</div>
             <div class="latest-product">latest-arrival</div>
         </section>
@@ -45,42 +50,71 @@
     </div>
 
 
+
+
     <section class="userForm">
 
-        <section class="item-form">
 
-            <div class="book-image">
-                <img src="../../../resources/image/07.jpg" />
-            </div>
+            <div class="book-grid">
 
-            <div class="quantity-item">
-                <div>Name</div>
-                <div>Price</div>
-                <div class="quantity">
-                    <p>Quantity</p>
-                    <button>-</button>
-                    <p contenteditable="true"> </p>
-                    <button>+</button>
+                <div class="book-preview">
+
+                    <div class="thumbnail-row">
+                        <a href="" target="_blank">
+                            <img class="thumbnail" src="../../../resources/book-image/Philosopher's-Stone-(1997).webp" />
+                        </a>
+
+
+                    </div>
+                    <div class="book-info-grid">
+                        <p class="book-title">Philosopher's Stone (1997)</p>
+                        <div>
+                            <p class="book-price">តមៃ្ល : 35$</p>
+                            <div class="quantity-box" >
+                                <button>-</button>
+                                <button contenteditable="true"> </button>
+                                <button>+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="book-preview">
+
+                    <div class="thumbnail-row">
+                        <a href="" target="_blank">
+                            <img class="thumbnail" src="../../../resources/book-image/48-law-power.jpg" />
+                        </a>
+
+
+                    </div>
+                    <div class="book-info-grid">
+                        <p class="book-title">The 48 Laws of Power</p>
+                        <div>
+                            <p class="book-price">តមៃ្ល : 13.82$</p>
+                            <div class="quantity-box" >
+                                <button>-</button>
+                                <button contenteditable="true"> </button>
+                                <button>+</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="product-model">
-                    <p>type</p>
 
-                </div>
+
 
 
             </div>
 
+        <div class="buy-button">
 
-
-        </section>
-
-
-
+            <p contenteditable="false">Total: </p>
+            <button>Buy</button>
+        </div>
 
     </section>
-
-
 
 </header>
 

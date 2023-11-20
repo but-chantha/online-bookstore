@@ -1,5 +1,5 @@
 body{
-    background: #cee1dc;
+    background-color: #d7d4d1;
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@ body{
     position: relative;
     width: 600px;
     height: 660px;
-    background-color: rgb(0,0,0,0.1);
+    background-color: #eeeded;
     border: 2px solid rgba(255,255,255,5);
     border-radius: 20px;
     backdrop-filter:blur(20px) ;

@@ -1,5 +1,5 @@
 body{
-    background: #cee1dc;
+    background-color: #d7d4d1;
     margin-bottom: 300px;
     font-family: sans-serif;
     margin-left: auto;
@@ -34,7 +34,7 @@ body{
 
 .userForm{
     border-radius: 15px;
-    background-color: rgb(0,0,0,0.1);
+    background-color: #eeeded;
     border: 2px solid rgba(255,255,255,5);
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
     backdrop-filter:blur(20px) ;
